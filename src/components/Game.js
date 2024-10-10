@@ -27,6 +27,7 @@ function Game() {
   const handleJump = () => {
     if (isGameStarted) {
       console.log("Sauter action déclenchée");
+      // Ajoutez ici la logique pour faire sauter FlappyPierre
     }
   };
 
@@ -55,6 +56,13 @@ function Game() {
             onJump={handleJump}
             onGameOver={handleGameOver}
           />
+          <button 
+            onClick={handleJump} 
+            className="jump-button"
+            style={{ backgroundColor: 'white', border: '1px solid black', padding: '10px', marginTop: '20px' }}
+          >
+            Sauter (Espace)
+          </button>
         </div>
       )}
     </div>
